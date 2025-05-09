@@ -1,3 +1,7 @@
+import 'package:admob_multi_inline_banner_examples/AdaptiveSizeNoRecyclePage.dart';
+import 'package:admob_multi_inline_banner_examples/AdaptiveSizeRecyclePage.dart';
+import 'package:admob_multi_inline_banner_examples/FixedSizeNoRecyclePage.dart';
+import 'package:admob_multi_inline_banner_examples/FixedSizeRecyclePage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -60,16 +64,16 @@ class MyHomePage extends StatelessWidget {
         child: ListView(
           children: [
             TextButton(child: Text("Fixed Size, No Recycle"), onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => const FixedSizeNoRecyclePage()));
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => FixedSizeNoRecyclePage()));
             }),
             TextButton(child: Text("Fixed Size, Recycle"), onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => const FixedSizeRecyclePage()));
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => FixedSizeRecyclePage()));
             }),
             TextButton(child: Text("Adaptive Size, No Recycle"), onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => const AdaptiveSizeNoRecyclePage()));
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => AdaptiveSizeNoRecyclePage()));
             }),
             TextButton(child: Text("Adaptive Size, Recycle"), onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => const AdaptiveSizeRecyclePage()));
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => AdaptiveSizeRecyclePage()));
             }),
           ],
         ),
