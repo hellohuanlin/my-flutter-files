@@ -23,6 +23,7 @@ class _AdaptiveSizeRecyclePageState extends State<AdaptiveSizeRecyclePage> {
         ? 'ca-app-pub-3940256099942544/6300978111'
         : 'ca-app-pub-3940256099942544/2934735716';
     AdSize adSize = AdSize.getCurrentOrientationInlineAdaptiveBannerAdSize(320);
+    print("Create a new banner");
     final BannerAd bannerAd = BannerAd(
       adUnitId: bannerId,
       request: const AdRequest(),
@@ -82,7 +83,7 @@ class _AdaptiveSizeRecyclePageState extends State<AdaptiveSizeRecyclePage> {
               return SizedBox(width: adSize.width.toDouble(), height: adSize.height.toDouble(), child: AdWidget(ad: bannerAd));
             }
           } else {
-            return SizedBox(height: 50, child: ColoredBox(color: Colors.yellow));
+            return SizedBox(height: 200, child: ColoredBox(color: Colors.yellow));
           }
         }),
     );

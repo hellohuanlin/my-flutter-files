@@ -52,7 +52,7 @@ class _FixedSizeRecyclePageState extends State<FixedSizeRecyclePage> {
               BannerAd bannerAd = _getRecycledBannerAd();
               return SizedBox(width: 320, height: 50, child: AdWidget(ad: bannerAd));
             } else {
-              return SizedBox(height: 50, child: ColoredBox(color: Colors.yellow));
+              return SizedBox(height: 200, child: ColoredBox(color: Colors.yellow));
             }
           },
       ),
