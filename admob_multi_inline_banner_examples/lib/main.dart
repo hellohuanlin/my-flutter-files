@@ -1,5 +1,6 @@
 import 'package:admob_multi_inline_banner_examples/AdaptiveSizeNoRecyclePage.dart';
 import 'package:admob_multi_inline_banner_examples/AdaptiveSizeRecyclePage.dart';
+import 'package:admob_multi_inline_banner_examples/DummyTestingPage.dart';
 import 'package:admob_multi_inline_banner_examples/FixedSizeNoRecyclePage.dart';
 import 'package:admob_multi_inline_banner_examples/FixedSizeRecyclePage.dart';
 import 'package:flutter/material.dart';
@@ -74,6 +75,9 @@ class MyHomePage extends StatelessWidget {
             }),
             TextButton(child: Text("Adaptive Size, Recycle"), onPressed: () {
               Navigator.of(context).push(MaterialPageRoute(builder: (context) => AdaptiveSizeRecyclePage()));
+            }),
+            TextButton(child: Text("Dummy Testing"), onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => DummyTestingPage()));
             }),
           ],
         ),
