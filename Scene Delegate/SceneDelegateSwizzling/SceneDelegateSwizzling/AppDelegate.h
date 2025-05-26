@@ -7,8 +7,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-
+@interface FlutterAppDelegate: UIResponder <UIApplicationDelegate>
+@property (nonatomic, strong) UIWindow *window;
 @end
+
+@interface AppDelegate : FlutterAppDelegate
+@end
+
 
