@@ -27,7 +27,7 @@ class _AdaptiveSizeRecyclePageState extends State<AdaptiveSizeRecyclePage> {
     final String bannerId = Platform.isAndroid
         ? 'ca-app-pub-3940256099942544/6300978111'
         : 'ca-app-pub-3940256099942544/2934735716';
-    AdSize adSize = AdSize.getCurrentOrientationInlineAdaptiveBannerAdSize(320);
+    AdSize adSize = AdSize.getCurrentOrientationInlineAdaptiveBannerAdSize(360);
     print("Create a new banner");
     final BannerAd bannerAd = BannerAd(
       adUnitId: bannerId,
